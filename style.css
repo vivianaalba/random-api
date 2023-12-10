@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: whitesmoke;
+}
+
+header {
+    background-image: url('/leavesBanner.jpeg');
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: rgb(4, 44, 10);
+    font-weight: bolder;
+}
+
+#refresh {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+button {
+    background-color: rgb(88, 170, 104);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add more styles as needed */
