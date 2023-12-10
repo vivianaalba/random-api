@@ -1,14 +1,22 @@
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: lavenderblush;
+    color: #333;
 }
 
+
 header {
-    background-image: url('./castle.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./castle.jpeg');
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position: center;
     background-size: cover;
     color: white;
     font-weight: bolder;
@@ -16,54 +24,95 @@ header {
     padding: 20px;
 }
 
+
 h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 3.5em;
+    margin-bottom: 15px;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-top: 0;
     color: rgb(185, 190, 186);
     font-weight: bolder;
 }
 
+
 #refresh {
     font-style: italic;
     font-size: 1.2em;
     margin-top: 0;
+    color: #827e7e;
 }
+
 
 main {
     max-width: 800px;
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
+
 #drinkName {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
     color: darkgreen;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 #cocktailImage {
     display: block;
     margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: wiggle 3s infinite;
 }
 
 button {
     background-color: rgb(88, 170, 104);
+    border: none;
     border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(68, 150, 84);
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 3px;
+    padding: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 0.8em;
 }
-
