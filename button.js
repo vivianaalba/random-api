@@ -4,6 +4,7 @@ import { fetchRandomCocktail } from "./fetchCocktail";
 function refreshButtonClicked() {
     fetchRandomCocktail();
 }
+
 // Add event listener to the refresh button
 document.getElementById('refreshButton').addEventListener('click', refreshButtonClicked);
 

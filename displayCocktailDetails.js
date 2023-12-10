@@ -28,7 +28,8 @@ function displayCocktailDetails(cocktail) {
     // define new data in the div we just made
     // find properties used in the api for each cocktail
     cocktailItem.innerHTML = `
-        <p>Name: ${cocktail.strDrink}</p>
+        <p id = "drinkName">${cocktail.strDrink}</p>
+        <img id = "cocktailImage" src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" style="max-width: 200px;">
         <p>Category: ${cocktail.strCategory}</p>
         <p>Alcohol Content: ${cocktail.strAlcoholic}</p>
         <p>Glass Type: ${cocktail.strGlass}</p>
@@ -37,7 +38,6 @@ function displayCocktailDetails(cocktail) {
         <ul>
             ${displayIngredientsAndMeasurements(cocktail)}
         </ul>
-        <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" style="max-width: 200px;">
     `;
     cocktailDetailsElement.innerHTML = ''; // Clear previous content
     cocktailDetailsElement.appendChild(cocktailItem); // add new data to the div
