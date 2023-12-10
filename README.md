@@ -27,3 +27,5 @@ Vite and Axios
 <br> Vite "streamlines the development workflow for web applications
 <br> In this project, we created a vite project with vanilla javascript
 <br> Axios library handles HTTP requests so that the client can interact with the API - essentially the mailman connecting the two parties through the internet
+
+![Screenshot of finished project](./projectScreenshot.png)
