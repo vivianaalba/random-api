@@ -1,13 +1,15 @@
 // Function to display ingredients and measurements
 function displayIngredientsAndMeasurements(cocktail) {
+    // initialize empty string to display our unordered list
     let ingredientsList = '';
 
     // Loop through ingredients and measurements
-    for (let i = 1; i <= 15; i++) {
+    // Goes through all ingredients in the API data
+    for (let i = 0; i <= 15; i++) {
         const ingredient = cocktail[`strIngredient${i}`];
         const measurement = cocktail[`strMeasure${i}`];
 
-        // Check if ingredient and measurement are present
+        // Check if ingredient and measurement are both present so that the user does not get an error or undefined if the measurement is not included
         if (ingredient && measurement) {
             ingredientsList += `<li>${measurement} ${ingredient}</li>`;
         } else if (ingredient) {
@@ -15,6 +17,7 @@ function displayIngredientsAndMeasurements(cocktail) {
         }
     }
 
+    // return ingredient list, which will be displayed to the user in the displayCocktailDetails function
     return ingredientsList;
 }
 
